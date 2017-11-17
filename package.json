@@ -1,0 +1,11 @@
+{
+  "name": "omakase",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "@frctl/inspector": "^2.0.0-beta.4",
+    "@frctl/fractal": "^2.0.0-beta.4",
+    "@frctl/fractal-engine-nunjucks": "^2.0.0-beta.4",
+    "@frctl/pages": "^2.0.0-beta.4"
+  }
+}
