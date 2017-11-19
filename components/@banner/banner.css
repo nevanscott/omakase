@@ -1,0 +1,46 @@
+header[role=banner] {
+  background: var(--header-background);
+  border-bottom: var(--header-stroke-style);
+  color: var(--header-text-color);
+  font-family: var(--font-family-interface);
+  font-weight: bold;
+  margin-bottom: var(--type-space-single);
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header[role=banner] h1 {
+  color: inherit;
+  font-family: inherit;
+  font-size: var(--font-size);
+  margin-right: var(--type-space-dash);
+}
+
+header[role=banner] nav {
+  font-size: var(--font-size);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header[role=banner] nav a {
+  color: var(--header-text-muted-color);
+  margin-right: var(--type-space-dash);
+}
+header[role=banner] nav a:last-child {
+  margin-right: 0;
+}
+header[role=banner] nav a.active,
+header[role=banner] nav a.selected {
+  color: var(--header-text-color);
+}
+header[role=banner] nav a[rel=home] {
+  display: none;
+}
+@media all and (min-width: 45em) {
+  header[role=banner] nav a[rel=home] {
+    display: inline;
+  }
+}
