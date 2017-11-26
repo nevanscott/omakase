@@ -13,7 +13,7 @@ module.exports = {
     src: './styleguide',
     dest: './build',
     site: {
-      title: 'Example Styleguide',
+      title: 'Omakase',
     },
     routes: {
       components: {
