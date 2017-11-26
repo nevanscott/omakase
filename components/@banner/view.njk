@@ -1,9 +1,10 @@
 <header role="banner">
-  <h1><a class="h-card" rel="me" href="/">Nevan Scott</a></h1>
-  <nav role="navigation">
-    <a href="/writing/">Writing</a>
-    <a href="/portfolio/">Portfolio</a>
-    <a href="/teaching/">Teaching</a>
-    <a href="/reading/">Reading</a>
-  </nav>
+  <h1><a class="h-card" rel="me" href="/">{{ siteName }}</a></h1>
+  {% if navLinks %}
+    <nav role="navigation">
+      {% for link in navLinks %}
+        <a href="{{ link.url }}">{{ link.text }}</a>
+      {% endfor %}
+    </nav>
+  {% endif %}
 </header>
