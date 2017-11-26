@@ -3,7 +3,8 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "build": "fractal-beta author --build"
+    "build": "fractal-beta author --build",
+    "dev": "fractal-beta inspect"
   },
   "dependencies": {
     "@frctl/cli": "^2.0.0-beta.4",
