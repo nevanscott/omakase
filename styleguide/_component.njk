@@ -13,11 +13,13 @@ id: 'component-{component.id}'
 <p>This component has {{ numVariants }} variant{{ '' if numVariants == 1 else 's' }}.</p>
 
 {% asyncEach variant in component.getVariants().all() %}
+
+{% asyncEach scenario in variant.getScenarios().all() %}
+
 <div class="variant">
-  {% set scenario = variant.getScenarios().first() %}
   {% set html = variant | render(scenario) %}
 
-  <h2 class="variant__title">{{ variant.label }}</h2>
+  <h2 class="variant__title">{{ variant.label }} – {{ scenario.label }}</h2>
 
   <div class="variant__section">
     <h3 class="variant__sectionTitle">Preview</h3>
@@ -41,6 +43,8 @@ id: 'component-{component.id}'
   </div>
 
 </div>
+
+{% endeach %}
 
 {% endeach %}
 
