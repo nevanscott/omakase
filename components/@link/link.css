@@ -1,0 +1,34 @@
+a {
+	box-shadow:
+	  inset
+      0
+      calc(-1 * var(--link-stroke-width))
+      var(--link-stroke-color)
+    ;
+	color: inherit;
+	text-decoration: none;
+	text-shadow:
+	  0 1px 0 var(--page-color),
+	  1px 1px 0 var(--page-color),
+	  -1px 1px 0 var(--page-color);
+	-webkit-transition: box-shadow 250ms;
+	transition: box-shadow 250ms;
+}
+
+a:hover {
+  box-shadow:
+    inset
+      0
+      calc(-1 * var(--link-stroke-width))
+      var(--link-stroke-color--hover)
+    ;
+}
+
+header[role=banner] a, footer[role=contentinfo] a {
+  box-shadow: unset;
+  text-shadow: none;
+}
+
+footer[role=contentinfo] a {
+  color: var(--text-muted-color);
+}
