@@ -1,6 +1,7 @@
 header[role=banner] {
   background: var(--header-background);
   border-bottom: var(--header-stroke-style);
+  border-top: .25em solid var(--brand-stroke-color);
   color: var(--header-text-color);
   font-family: var(--font-family-interface);
   font-weight: bold;
